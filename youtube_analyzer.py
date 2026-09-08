@@ -9,7 +9,7 @@ load_dotenv()
 def build_youtube_agent():
     return Agent(
         name="YouTube Agent",
-        model=Groq(id="qwen/qwen3.6-27b"),
+        model=Groq(id="openai/gpt-oss-20b"),
         tools=[YouTubeTools()],
         instructions=dedent("""\
             You are an expert YouTube content analyst with a keen eye for detail!
